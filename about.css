@@ -1,0 +1,164 @@
+.container {
+  /* max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem; */
+  /* margin: 0 100px; */
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 6rem 0 6rem;
+  height: fit-content;
+}
+.hero-content h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.subtitle {
+  font-size: 2rem;
+  color: #7b7b7b;
+  text-align: center;
+}
+.hero-image {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+}
+
+/* Biografie */
+.biography {
+  background: #000;
+  color: #fff;
+}
+.biography h2 {
+  font-size: 2rem;
+}
+.biography p {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  max-width: 700px;
+}
+
+/* Hobbys */
+.sectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 3rem 2rem;
+  text-align: left;
+  padding: 4rem 6rem 4rem 6rem;
+}
+.hobbies h2 {
+  font-size: 2rem;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 750px;
+  margin: 2rem 0;
+}
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #d9d9d9;
+  width: 350px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+.card p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.video {
+  width: 560px;
+  box-sizing: content-box;
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .biography,
+  .hobbies {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero {
+    padding: 4rem 2rem 0 2rem;
+  }
+  .biography,
+  .hobbies {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+  .video {
+    box-sizing: border-box;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .biography {
+    gap: 2rem;
+  }
+  .biography h2,
+  .hobbies h2 {
+    font-size: 1.5rem;
+  }
+  /* .card {
+    width: 100%;
+    max-width: 90%;
+  } */
+}
