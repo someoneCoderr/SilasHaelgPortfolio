@@ -1,28 +1,3 @@
-/* Hero */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
-  height: fit-content;
-  padding: 3rem;
-}
-.hero-content h1 {
-  font-size: 3rem;
-  width: 100%;
-  text-align: center;
-}
-.subtitle {
-  font-size: 1.2rem;
-  color: #666;
-  text-align: center;
-}
-.hero-image img {
-  max-width: 700px;
-  width: 100%;
-  border-radius: 8px;
-}
-
 main {
   min-height: 80vh;
 }
@@ -35,10 +10,10 @@ main {
   margin: 2rem;
 }
 .card {
-  background: #fff;
+  background: var(--color-bg-light);
   padding: 1.5rem;
   border-radius: 12px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--color-grey-border);
   width: 350px;
   text-align: left;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -56,16 +31,10 @@ main {
 .card h3 {
   margin-bottom: 0.5rem;
   font-size: 1.8rem;
-  color: #333;
+  color: var(--color-text);
 }
 .card p {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--color-grey);
   line-height: 1.5;
 }
-
-/* @media screen and (max-width: 1250px) {
-  .cards {
-    margin: 2rem;
-  }
-} */

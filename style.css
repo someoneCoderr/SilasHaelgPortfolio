@@ -1,19 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Farbvariablen */
+:root {
+  --color-bg: #000;
+  --color-bg-light: #fff;
+  --color-text: #000;
+  --color-text-light: #fff;
+  --color-grey: #666;
+  --color-grey-border: #d9d9d9;
+  --color-subtitle: #7b7b7b;
+}
+
+/* Allgemeine styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  color: black;
+  color: var(--color-text);
 }
 
 /* Navigation */
 .navbar {
-  background: #000;
+  background: var(--color-bg);
   padding: 1rem;
 }
 .nav-list {
@@ -24,21 +40,52 @@ body {
   margin: 20px;
 }
 .nav-list a {
-  color: #fff;
+  color: var(--color-text-light);
   text-decoration: none;
   padding: 10px;
   font-size: 1.5rem;
 }
 
 #active {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--color-text-light);
+}
+
+/* Hero fuer skills, portfolio und contact */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  height: fit-content;
+  padding: 3rem;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--color-subtitle);
+  text-align: center;
+}
+
+/* zentrale styles @mediaquery 900px */
+@media screen and (max-width: 900px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 /* Footer */
 .footer {
   text-align: start;
-  background: #000;
-  color: #fff;
+  background: var(--color-bg);
+  color: var(--color-text-light);
   padding: 2rem;
 }
 .footer-top h2 {
@@ -50,11 +97,9 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  /* gap: 1.5rem; */
-  /* margin-bottom: 1.5rem; */
 }
 .footer-nav a {
-  color: #fff;
+  color: var(--color-text-light);
   text-decoration: none;
 }
 .social {
@@ -70,7 +115,7 @@ body {
   height: 32px;
 }
 
-
+/* Responsive Design */
 @media screen and (max-width: 900px) {
   .nav-list {
     flex-direction: column;
@@ -87,4 +132,4 @@ body {
     font-size: 1.5em;
   }
                                                                                                                                                                                                                    
-}   
+}
